@@ -50,7 +50,40 @@
       <a href="" target="_blank"><button><h1>Bikin website mirip sperti ini HANYA 10K</h1></button>
         <img src="Tak berjudul48_20250710141246.jpg" width="275" height=""
     </ul>
-  
+  <br>
+<br>
+  <title>Animasi JavaScript</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background: orange;
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+
+  <script>
+    const box = document.querySelector('.box');
+    let posisi = 0;
+
+    function gerak() {
+      posisi += 2;
+      box.style.left = posisi + 'px';
+
+      if (posisi < window.innerWidth - 100) {
+        requestAnimationFrame(gerak); // animasi halus
+      }
+    }
+
+    gerak();
+  </script>
+</body>
+</html>
   </section>
 
     <h1>AKUN SOSMED</h1><a href="https://www.tiktok.com/@zet_ef_?_t=ZS-8yg7nJwBA51&_r=1" target="_blank"><button><h1>TIKTOK SAYA YANG HARUS DI FOLLOW 1<h1></h1></button></a></a>
